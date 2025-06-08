@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title> Custom Pictures Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Puzzle</h1>
+
+  <div>
+    <label for="image">Picture:</label>
+    <select id="image">
+      <option value="puzzle1.png">Picture 1</option>
+      <option value="puzzle2.png">Picture 2</option>
+      <option value="puzzle3.png">Picture 3</option>
+    </select>
+
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+      <option value="20" selected>Easy</option>
+      <option value="100">Medium</option>
+      <option value="500">Hard</option>
+      <option value="1500">Insane</option>
+    </select>
+
+    <button onclick="shuffle()">Shuffle</button>
+  </div>
+
+  <div id="puzzle-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
